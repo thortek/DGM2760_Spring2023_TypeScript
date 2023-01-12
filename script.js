@@ -1,9 +1,3 @@
-console.log('Welcome to the JavaScript')
-
-let foo = 'my string'
-
-let bar
-
-//foo = 25
-
-console.log(typeof(foo))
+console.log('Here is script.ts being compiled to script.js to show up in the browser');
+var thor = 'Strongest Avenger';
+var stark = 'Whiny science guy';
