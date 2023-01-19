@@ -2,6 +2,6 @@ console.log('Here is script.ts being compiled to script.js to show up in the bro
 
 const thor = 'Strongest Avenger'
 
-let stark = 'Whiny science guy'
+let stark = 'Whiny technology guy'
 
-console.log(thor)
+console.log(thor, stark)
