@@ -8,7 +8,7 @@
     "compileTS": "npx tsc -w",
     "compileTailWind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify --watch",
     "server": "lite-server",
-    "dev": "npm-run-all --parallel --race compileTS compileTailWind server"
+    "dev": "npm-run-all --parallel --race compileTS compileTailWind"
   },
   "author": "",
   "license": "ISC",

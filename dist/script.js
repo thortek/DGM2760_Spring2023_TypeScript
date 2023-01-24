@@ -1,5 +1,12 @@
-"use strict";
-//console.log('Here is script.ts being compiled to script.js to show up in the browser')
-const thor = 'Strongest Avenger';
-let stark = 'Whiny technology guy';
-//console.log(thor, stark)
+/* 
+function add(numOne, numTwo) {
+    return numOne + numTwo
+}
+
+const foo = 25
+const bar = 3.5
+const baz = '!'
+
+// an argument is a value (primitve or object) passed as input to a function.
+let numResult = add(foo, bar, baz)
+console.log(numResult) */
