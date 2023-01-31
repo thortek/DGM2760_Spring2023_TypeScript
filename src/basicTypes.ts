@@ -46,3 +46,24 @@ const sportsCar: {
 }
 
 console.log('My car is one of these', sportsCar)
+
+const storageHTML = `<body>
+<header class="m-8 text-4xl">Basic TypeScript Types Examples</header>
+<main class="flex h-screen">
+  <nav class="w-72 h-full">
+    <ul>
+      <li class="m-8">
+        <button id="funcParams" class="btn btn-primary">Function Parameter Types</button>
+      </li>
+    </ul>
+  </nav>
+  <div>
+    <div id="codeExample" class="card">
+        <div class="card-body">
+            <h2 class="card-title"></h2>
+        </div>
+    </div>
+  </div>
+</main>
+<footer>&copy; Thor Anderson 2023 - For Educational Purposes Only</footer>
+</body>`
