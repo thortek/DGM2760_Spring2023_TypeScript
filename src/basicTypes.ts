@@ -1,11 +1,23 @@
-const funcParamsButton = document.querySelector('#funcParams')
-const cardTitle = document.querySelector('.card-title')
+// document.querySelector('#counterDiv')!.innerHTML = `
+// <a class="text-3xl" href="https://www.uvu.edu" target="_blank">Go to UVU!</a>
+// `
 
-funcParamsButton?.addEventListener('click', showExample)
+const funcParamsButton = document.querySelector('#funcParams')!
+const codeExample = document.querySelector('#codeExample')!
+const cardTitle = document.querySelector('.card-title')!
+const codeContent = document.querySelector('#codeContent')!
+
+funcParamsButton.addEventListener('click', showExample)
 
 function showExample() {
-    console.log('About to show example...')
-    //cardTitle.textContent = 'function add(num1: number, num2: number)'
+  console.log('About to show example...')
+  codeExample.classList.add("m-8", "p-4", "w-auto", "shadow-xl")
+  codeContent.classList.add("code-mockup")
+  cardTitle.textContent = 'Data types set on function parameters'
+  codeContent.innerHTML = `<pre data-prefix="1"><code>function add(num1: number, num2: number) {
+    return num1 + num2
+}</code></pre>`
+
 }
 
 

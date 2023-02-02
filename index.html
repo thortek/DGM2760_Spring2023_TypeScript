@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,31 @@
     <title>TypeScript Examples</title>
     <link rel="stylesheet" href="/dist/output.css"/>
     <script src="/src/index.ts" type="module" defer></script>
+    <script src="/src/basicTypes.ts" type="module" defer></script>
 </head>
 <body>
-    <h1 class="text-green-900 text-3xl font-bold text-center">Welcome to my TypeScript page!</h1>
-    <h2 class="bg-slate-500 text-red-200 text-4xl">This is where I show off my TypeScript skills</h2>
-    <div class="bg-slate-800 text-white" id="counterDiv"></div>
+    <header class="m-8 text-4xl text-center border-4 p-4 outline outline-offset-2 outline-blue-800">Basic TypeScript Types Examples</header>
+<main class="flex h-screen">
+  <nav class="w-72 m-8 p-8 bg-slate-100">
+    <ul>
+      <li class="">
+        <button id="funcParams" class="btn btn-primary">Function Parameter Types</button>
+      </li>
+    </ul>
+  </nav>
+  <div class="m-8 w-screen bg-slate-100">
+    <div id="codeExample" class="card visible">
+        <div class="card-body">
+            <h2 class="card-title"></h2>
+            <div id="codeContent">
+<!--                 <pre data-prefix="1"><code>npm i daisyui</code></pre> 
+                <pre data-prefix="2"><code>installing...</code></pre> 
+                <pre data-prefix="3" class="bg-warning text-warning-content"><code>Error!</code></pre> -->
+            </div>
+        </div>
+    </div>
+  </div>
+</main>
+<footer>&copy; Thor Anderson 2023 - For Educational Purposes Only</footer>
 </body>
 </html>
