@@ -1,7 +1,7 @@
-const funcParamsButton = document.querySelector('#funcParams')
-const cardTitle = document.querySelector('.card-title')
+const funcParamsButton = document.querySelector('#funcParams')!
+const cardTitle = document.querySelector('.card-title')!
 
-funcParamsButton?.addEventListener('click', showExample)
+funcParamsButton.addEventListener('click', showExample)
 
 function showExample() {
     console.log('About to show example...')
