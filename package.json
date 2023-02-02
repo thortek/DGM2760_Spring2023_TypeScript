@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watchTailWind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "buildTailWind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "serveVite": "vite --port 3000",
+    "serveVite": "npx vite --port 3000",
+    "preview": "npx vite preview",
     "dev": "npm-run-all --parallel --race watchTailWind serveVite",
-    "build": "tsc && vite build && npm run buildTailWind"
+    "build": "npx tsc && npx vite build && npm run buildTailWind"
   },
   "author": "",
   "license": "ISC",
