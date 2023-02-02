@@ -1,13 +1,15 @@
 const funcParamsButton = document.querySelector('#funcParams')!
+const codeExample = document.querySelector('#codeExample')!
 const cardTitle = document.querySelector('.card-title')!
+const cardContent = document.querySelector('#cardContent')!
 
 funcParamsButton.addEventListener('click', showExample)
 
 function showExample() {
     console.log('About to show example...')
-    //cardTitle.textContent = 'function add(num1: number, num2: number)'
+  cardTitle.textContent = 'function add(num1: number, num2: number)'
+  cardContent.innerHTML = `<p>some code goes here</p>`
 }
-
 
 console.log('This is my Basic Types practice page')
 
@@ -46,24 +48,3 @@ const sportsCar: {
 }
 
 console.log('My car is one of these', sportsCar)
-
-const storageHTML = `<body>
-<header class="m-8 text-4xl">Basic TypeScript Types Examples</header>
-<main class="flex h-screen">
-  <nav class="w-72 h-full">
-    <ul>
-      <li class="m-8">
-        <button id="funcParams" class="btn btn-primary">Function Parameter Types</button>
-      </li>
-    </ul>
-  </nav>
-  <div>
-    <div id="codeExample" class="card">
-        <div class="card-body">
-            <h2 class="card-title"></h2>
-        </div>
-    </div>
-  </div>
-</main>
-<footer>&copy; Thor Anderson 2023 - For Educational Purposes Only</footer>
-</body>`

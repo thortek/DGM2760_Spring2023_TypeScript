@@ -7,23 +7,27 @@
     <title>TypeScript Examples</title>
     <link rel="stylesheet" href="/dist/output.css" />
     <script src="/src/index.ts" type="module" defer></script>
+    <script src="/src/basicTypes.ts" type="module" defer></script>
   </head>
   <body>
-    <header class="m-8 text-4xl">Basic TypeScript Types Examples</header>
+    <header class="m-8 text-4xl border-4 p-4 outline outline-offset-2">Basic TypeScript Types Examples</header>
     <main class="flex h-screen">
-      <nav class="w-72 h-full">
+      <nav class="w-72 bg-slate-100 mx-8">
         <ul>
-          <li class="m-8">
+          <li>
             <button id="funcParams" class="btn btn-primary">
               Function Parameter Types
             </button>
           </li>
         </ul>
       </nav>
-      <div>
+      <div class="bg-slate-100 mx-8 w-screen">
         <div id="codeExample" class="card">
           <div class="card-body">
             <h2 class="card-title"></h2>
+            <div id="cardContent">
+ <!-- here is where the code example gets inserted -->               
+            </div>
           </div>
         </div>
       </div>
