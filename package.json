@@ -10,7 +10,7 @@
     "serveVite": "npx vite --port 3000",
     "preview": "npx vite preview",
     "dev": "npm-run-all --parallel --race watchTailWind serveVite",
-    "build": "npx tsc && npx vite build && npm run buildTailWind"
+    "build": "npx tsc && npm run buildTailWind && npx vite build"
   },
   "author": "",
   "license": "ISC",
