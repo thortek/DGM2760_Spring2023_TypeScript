@@ -1,14 +1,24 @@
 const funcParamsButton = document.querySelector('#funcParams')!
+const objectTypesToggle = document.querySelector('#objectTypes')!
 const codeExample = document.querySelector('#codeExample')!
 const cardTitle = document.querySelector('.card-title')!
-const cardContent = document.querySelector('#cardContent')!
+const cardContent1 = document.querySelector('#cardContent1')!
+const cardContent2 = document.querySelector('#cardContent2')!
 
-funcParamsButton.addEventListener('click', showExample)
+funcParamsButton.addEventListener('click', showExample1)
+objectTypesToggle.addEventListener('click', showExample2)
 
-function showExample() {
+function showExample1() {
     console.log('About to show example...')
-  cardTitle.textContent = 'function add(num1: number, num2: number)'
-  cardContent.innerHTML = `<p>some code goes here</p>`
+    cardTitle.textContent = 'Typed function parameters'
+    cardContent1.innerHTML = `<pre data-prefix="1">function add(num1: number, num2: number) {
+    <pre data-prefix="2">    return num1 + num2</pre>
+<pre data-prefix="3">}</pre>`
+    
+}
+
+function showExample2() {
+
 }
 
 console.log('This is my Basic Types practice page')

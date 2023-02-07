@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="night">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,20 +12,38 @@
   <body>
     <header class="m-8 text-4xl border-4 p-4 outline outline-offset-2">Basic TypeScript Types Examples</header>
     <main class="flex h-screen">
-      <nav class="w-72 bg-slate-100 mx-8">
+      <nav class="w-72 mx-8">
         <ul>
-          <li>
+          <li class="mt-4 form-control">
             <button id="funcParams" class="btn btn-primary">
               Function Parameter Types
             </button>
+            <label class="cursor-pointer label">
+              <span class="label-text">Function Parameter Types</span> 
+              <input type="checkbox" class="toggle toggle-secondary" checked />
+            </label>
+          </li>
+          <li id="objectTypes" class="form-control">
+            <label class="cursor-pointer label">
+              <span class="label-text">Object Types</span> 
+              <input type="checkbox" class="toggle toggle-secondary" checked />
+            </label>
           </li>
         </ul>
       </nav>
       <div class="bg-slate-100 mx-8 w-screen">
-        <div id="codeExample" class="card">
+        <div id="codeExample1" class="card">
           <div class="card-body">
             <h2 class="card-title"></h2>
-            <div id="cardContent">
+            <div id="cardContent1" class="mockup-code">
+ <!-- here is where the code example gets inserted -->               
+            </div>
+          </div>
+        </div>
+        <div id="codeExample2" class="card">
+          <div class="card-body">
+            <h2 class="card-title"></h2>
+            <div id="cardContent2" class="mockup-code">
  <!-- here is where the code example gets inserted -->               
             </div>
           </div>
