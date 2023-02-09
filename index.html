@@ -5,46 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TypeScript Examples</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/dist/output.css" />
     <script src="/src/index.ts" type="module" defer></script>
     <script src="/src/basicTypes.ts" type="module" defer></script>
   </head>
   <body>
-    <header class="m-8 text-4xl border-4 p-4 outline outline-offset-2">Basic TypeScript Types Examples</header>
+    <header class="m-8 text-4xl border-4 p-4 outline outline-offset-2 text-center">Basic TypeScript Types Examples</header>
     <main class="flex h-screen">
       <nav class="w-72 mx-8">
         <ul>
-          <li class="mt-4 form-control">
+          <li class="my-8">
             <button id="funcParams" class="btn btn-primary">
               Function Parameter Types
             </button>
-            <label class="cursor-pointer label">
-              <span class="label-text">Function Parameter Types</span> 
-              <input type="checkbox" class="toggle toggle-secondary" checked />
-            </label>
           </li>
-          <li id="objectTypes" class="form-control">
-            <label class="cursor-pointer label">
-              <span class="label-text">Object Types</span> 
-              <input type="checkbox" class="toggle toggle-secondary" checked />
-            </label>
+          <li class="my-8 flex justify-center">
+            <button id="objectTypes" class="btn btn-primary">
+              Object Types
+            </button>
+          </li>
+          <li class="my-8">
+            <button id="funcReturnTypes" class="btn btn-primary">
+              Function Return Types
+            </button>
+          </li>
+          <li class="my-8 flex justify-center">
+            <button id="funcAsType" class="btn btn-primary">
+              Functions As Types
+            </button>
           </li>
         </ul>
       </nav>
-      <div class="bg-slate-100 mx-8 w-screen">
-        <div id="codeExample1" class="card">
+      <div id="code-example" class="bg-slate-100 mx-8 w-screen">
+        <div id="code-card" class="card">
           <div class="card-body">
             <h2 class="card-title"></h2>
-            <div id="cardContent1" class="mockup-code">
- <!-- here is where the code example gets inserted -->               
-            </div>
-          </div>
-        </div>
-        <div id="codeExample2" class="card">
-          <div class="card-body">
-            <h2 class="card-title"></h2>
-            <div id="cardContent2" class="mockup-code">
- <!-- here is where the code example gets inserted -->               
+            <p id="card-content"></p>
+            <div id="code-content" class="mockup-code">
+              <!-- Here is where the preformatted code example is displayed -->
             </div>
           </div>
         </div>
