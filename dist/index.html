@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="night">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TypeScript Examples</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" rel="stylesheet">
     
     
     
-    <script type="module" crossorigin src="/assets/index-136a4018.js"></script>
-    <link rel="stylesheet" href="/assets/index-e094958c.css">
+    <script type="module" crossorigin src="/assets/index-2048cbb1.js"></script>
+    <link rel="stylesheet" href="/assets/index-fe606296.css">
   </head>
   <body>
-    <header class="m-8 text-4xl border-4 p-4 outline outline-offset-2">Basic TypeScript Types Examples</header>
+    <header class="m-8 text-4xl border-4 p-4 outline outline-offset-2 text-center">Basic TypeScript Types Examples</header>
     <main class="flex h-screen">
-      <nav class="w-72 bg-slate-100 mx-8">
+      <nav class="w-72 mx-8">
         <ul>
-          <li>
+          <li class="my-8">
             <button id="funcParams" class="btn btn-primary">
               Function Parameter Types
             </button>
           </li>
+          <li class="my-8 flex justify-center">
+            <button id="objectTypes" class="btn btn-primary">
+              Object Types
+            </button>
+          </li>
+          <li class="my-8">
+            <button id="funcReturnTypes" class="btn btn-primary">
+              Function Return Types
+            </button>
+          </li>
+          <li class="my-8 flex justify-center">
+            <button id="funcAsType" class="btn btn-primary">
+              Functions As Types
+            </button>
+          </li>
         </ul>
       </nav>
-      <div class="bg-slate-100 mx-8 w-screen">
-        <div id="codeExample" class="card">
+      <div id="code-example" class="bg-slate-100 mx-8 w-screen">
+        <div id="code-card" class="card">
           <div class="card-body">
             <h2 class="card-title"></h2>
-            <div id="cardContent">
- <!-- here is where the code example gets inserted -->               
+            <p id="card-content"></p>
+            <div id="code-content" class="mockup-code">
+              <!-- Here is where the preformatted code example is displayed -->
             </div>
           </div>
         </div>

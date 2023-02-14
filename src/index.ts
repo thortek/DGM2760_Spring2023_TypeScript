@@ -8,19 +8,26 @@ const cardTitle = document.querySelector('.card-title')!
 const cardContent = document.querySelector('#card-content')!
 const codeContent = document.querySelector('#code-content')!
 
-funcParamsButton.addEventListener('click', showFuncParamsExample)
-objectTypesButton.addEventListener('click', showObjTypesExample)
+funcParamsButton.addEventListener('click', loadExample.bind(this, functionParamsExample))
+objectTypesButton.addEventListener('click', loadExample.bind(this, objectTypeExample))
 
-function showFuncParamsExample() {
-    cardTitle.textContent = functionParamsExample().title // chaining example
-    const { explanation, code } = functionParamsExample()
-    cardContent.textContent = explanation
-    codeContent.innerHTML = code
-}
+// function showFuncParamsExample() {
+//     const { title, explanation, code } = functionParamsExample()
+//     cardTitle.textContent = title
+//     cardContent.textContent = explanation
+//     codeContent.innerHTML = code
+// }
 
-function showObjTypesExample() {
-    cardTitle.textContent = objectTypeExample().title // chaining example
-    const { explanation, code } = objectTypeExample()
+// function showObjTypesExample() {
+//     const { title, explanation, code } = objectTypeExample()
+//     cardTitle.textContent = title
+//     cardContent.textContent = explanation
+//     codeContent.innerHTML = code
+// }
+
+function loadExample(functionExample: () => { title: string, explanation: string, code: string }) {
+    const { title, explanation, code } = functionExample()
+    cardTitle.textContent = title
     cardContent.textContent = explanation
     codeContent.innerHTML = code
 }
