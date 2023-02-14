@@ -5,6 +5,9 @@ module.exports = {
     './index.html'
   ],
   theme: {
+    fontFamily: {
+      'anton': ['anton', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [require("daisyui")],

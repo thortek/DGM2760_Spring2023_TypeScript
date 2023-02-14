@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TypeScript Examples</title>
-    <link rel="stylesheet" href="/dist/output.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="/dist/output.css" />
     <script src="/src/index.ts" type="module" defer></script>
     <script src="/src/basicTypes.ts" type="module" defer></script>
-</head>
-<body>
-    <header class="m-8 text-4xl text-center border-4 p-4 outline outline-offset-2 outline-blue-800">Basic TypeScript Types Examples</header>
-<main class="flex h-screen">
-  <nav class="w-72 m-8 p-8 bg-slate-100">
-    <ul>
-      <li class="">
-        <button id="funcParams" class="btn btn-primary">Function Parameter Types</button>
-      </li>
-    </ul>
-  </nav>
-  <div class="m-8 w-screen bg-slate-100">
-    <div id="codeExample" class="card visible">
-        <div class="card-body">
-            <h2 class="card-title"></h2>
-            <div id="codeContent">
-<!--                 <pre data-prefix="1"><code>npm i daisyui</code></pre> 
+  </head>
+  <body>
+    <header
+      class="m-8 text-4xl text-center border-4 p-4 outline outline-offset-2 outline-blue-800 font-anton"
+    >
+      Basic TypeScript Types Examples
+    </header>
+    <main class="flex h-screen">
+      <nav class="w-72 m-8 p-8 bg-slate-100">
+        <ul>
+          <li class="my-8">
+            <button id="funcParams" class="btn btn-primary">
+              Function Parameter Types
+            </button>
+          </li>
+          <li class="my-8 flex justify-center">
+            <button id="objTypes" class="btn btn-primary">
+              Object Types
+            </button>
+          </li>
+          <li class="my-8">
+            <button id="funcReturnTypes" class="btn btn-primary">
+              Function Return Types
+            </button>
+          </li>
+          <li class="my-8">
+            <button id="funcAsTypes" class="btn btn-primary">
+              Functions As Types
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div id="code-example" class="hero m-8 w-screen">
+          <div id="code-card" class="card">
+            <div class="card-body">
+              <h2 class="card-title"></h2>
+              <p id="card-content"></p>
+            <div id="codeContent" class="mockup-code bg-primary text-primary-content">
+                <pre data-prefix="1"><code>npm i daisyui</code></pre> 
                 <pre data-prefix="2"><code>installing...</code></pre> 
-                <pre data-prefix="3" class="bg-warning text-warning-content"><code>Error!</code></pre> -->
+                <pre data-prefix="3" class="bg-warning text-warning-content"><code>Error!</code></pre> 
             </div>
-        </div>
-    </div>
-  </div>
-</main>
-<footer class="fixed bottom-0 w-screen p-2 bg-white text-center">&copy; Thor Anderson 2023 - For Educational Purposes Only</footer>
-</body>
+          </div>
+          </div>
+      </div>
+    </main>
+    <footer class="fixed bottom-0 w-screen p-2 bg-white text-center">
+      &copy; Thor Anderson 2023 - For Educational Purposes Only
+    </footer>
+  </body>
 </html>

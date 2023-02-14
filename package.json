@@ -9,7 +9,7 @@
     "buildTailWind": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "serveVite": "vite --port 3000",
     "dev": "npm-run-all --parallel --race watchTailWind serveVite",
-    "build": "tsc && vite build && npm run buildTailWind"
+    "build": "npx tsc && npm run buildTailWind && npx vite build"
   },
   "author": "",
   "license": "ISC",
