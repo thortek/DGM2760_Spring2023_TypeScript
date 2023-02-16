@@ -1,27 +1,33 @@
-import { functionParamsExample, objectTypeExample } from "./basicTypes" // import from function library
+import { functionParamsExample, objectTypeExample } from "./basicTypes"
 
-
-//get a handle to all of our UI elements
 const funcParamsButton = document.querySelector('#funcParams')!
-const objTypesButton = document.querySelector('#objTypes')!
+const objectTypesButton = document.querySelector('#objectTypes')!
+
+//const codeExample = document.querySelector('#code-example')!
 const cardTitle = document.querySelector('.card-title')!
-const cardContent= document.querySelector('#card-content')!
-const codeContent = document.querySelector('#codeContent')!
+const cardContent = document.querySelector('#card-content')!
+const codeContent = document.querySelector('#code-content')!
 
-funcParamsButton.addEventListener('click', showFuncParamsExample)
-objTypesButton.addEventListener('click', showObjTypesExample)
+funcParamsButton.addEventListener('click', loadExample.bind(this, functionParamsExample))
+objectTypesButton.addEventListener('click', loadExample.bind(this, objectTypeExample))
 
-function showFuncParamsExample() {
-  console.log('About to show example...')
-  const { explanation, code } = functionParamsExample() //destructure object
-  cardTitle.textContent = functionParamsExample().title // chaining
-  cardContent.textContent = explanation
-  codeContent.innerHTML = code
-}
+// function showFuncParamsExample() {
+//     const { title, explanation, code } = functionParamsExample()
+//     cardTitle.textContent = title
+//     cardContent.textContent = explanation
+//     codeContent.innerHTML = code
+// }
 
-function showObjTypesExample() {
-  const {title, explanation, code } = objectTypeExample() //destructure object
-  cardTitle.textContent = title // chaining
-  cardContent.textContent = explanation
-  codeContent.innerHTML = code
+// function showObjTypesExample() {
+//     const { title, explanation, code } = objectTypeExample()
+//     cardTitle.textContent = title
+//     cardContent.textContent = explanation
+//     codeContent.innerHTML = code
+// }
+
+function loadExample(functionExample: () => { title: string, explanation: string, code: string }) {
+    const { title, explanation, code } = functionExample()
+    cardTitle.textContent = title
+    cardContent.textContent = explanation
+    codeContent.innerHTML = code
 }
