@@ -1,47 +1,8 @@
-
-export const functionParamsExample = () => {
-  return {
-    title: `Data types set on function parameters`,
-    explanation: `Here is where I explain the syntax of function parameters when using TypeScript`,
-    code: `
+import"./modulepreload-polyfill-ec808ebb.js";const o=()=>({title:"Data types set on function parameters",explanation:"Here is where I explain the syntax of function parameters when using TypeScript",code:`
     <pre data-prefix="1"><code>function add(num1: number, num2: number) {</code></pre>
     <pre data-prefix="2"><code>    return num1 + num2</code></pre>
     <pre data-prefix="3"><code>}</code></pre>
-    `
-  }
-}
-
-enum Role {
-  ADMIN,
-  DEV,
-  STUDENT,
-}
-
-const sportsCar: {
-  make: string
-  model: string
-  horsepower: number
-  style: string
-  isFast: boolean
-  colors: string[]
-  driver: [number, string]
-  role: Role
-} = {
-  make: 'McLaren',
-  model: '720s',
-  horsepower: 720,
-  style: 'coupe',
-  isFast: true,
-  colors: ['red', 'blue', 'silver'],
-  driver: [1, 'McLaren'],
-  role: Role.ADMIN,
-}
-
-export const objectTypeExample = () => {
-  return {
-    title: `Object data type with all properties set`,
-    explanation: `TypeScript can infer the data type of an object if all properties are set, but this example shows how to explicitly set the types of each property.`,
-    code: `
+    `}),d={make:"McLaren",model:"720s",horsepower:720,style:"coupe",isFast:!0,colors:["red","blue","silver"],driver:[1,"McLaren"],role:0},n=()=>({title:"Object data type with all properties set",explanation:"TypeScript can infer the data type of an object if all properties are set, but this example shows how to explicitly set the types of each property.",code:`
     <pre data-prefix="1"><code>enum Role {</code></pre>
     <pre data-prefix="2"><code>  ADMIN,</code></pre>
     <pre data-prefix="3"><code>  DEV,</code></pre>
@@ -67,25 +28,4 @@ export const objectTypeExample = () => {
     <pre data-prefix="23"><code>  driver: [1, 'McLaren'],</code></pre>
     <pre data-prefix="24"><code>  role: Role.ADMIN,</code></pre>
     <pre data-prefix="25"><code>}</code></pre>
-  `
-  } 
-}
-
-
-console.log('This is my Basic Types practice page')
-
-// A parameter is a named variable passed into a function
-function add(num1: number, num2: number) {
-  return num1 + num2
-}
-
-const numberOne = 25
-const numberTwo = 3.5
-
-// an argument is a value (primitve or object) passed as input to a function.
-let result = add(numberOne, numberTwo)
-console.log(result)
-
-
-
-console.log('My car is one of these', sportsCar)
+  `});console.log("This is my Basic Types practice page");function i(e,r){return e+r}const s=25,l=3.5;let u=i(s,l);console.log(u);console.log("My car is one of these",d);const x=document.querySelector("#funcParams"),f=document.querySelector("#objTypes"),t=document.querySelector(".card-title"),c=document.querySelector("#card-content"),p=document.querySelector("#codeContent");x.addEventListener("click",m);f.addEventListener("click",y);function m(){console.log("About to show example...");const{explanation:e,code:r}=o();t.textContent=o().title,c.textContent=e,p.innerHTML=r}function y(){const{title:e,explanation:r,code:a}=n();t.textContent=e,c.textContent=r,p.innerHTML=a}
