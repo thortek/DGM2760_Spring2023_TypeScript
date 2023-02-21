@@ -36,7 +36,7 @@ export const objectTypeExample = () => {
   }
 }
 
-console.log('This is my Basic Types practice page')
+// console.log(JSON.stringify(objectTypeExample(), null, 2), JSON.stringify(functionParamsExample(), null, 2))
 
 // A parameter is a named variable passed into a function
 function add(num1: number, num2: number): number {
