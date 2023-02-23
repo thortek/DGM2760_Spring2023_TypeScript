@@ -59,7 +59,7 @@ const sportsCar: {
     style: string;
     isFast: boolean;
     colors: string[];
-    driver: [number, string];
+    driver: [number, string, boolean, string];
     role: Role;
 } = {
     make: "McLaren",
@@ -68,7 +68,7 @@ const sportsCar: {
     style: 'coupe',
     isFast: true,
     colors: ['red', 'blue', 'silver'],
-    driver: [1, 'McLaren'],
+    driver: [1, 'McLaren', true, 'bar'], // tuple with mixed data types
     role: Role.ADMIN,
 }
 
