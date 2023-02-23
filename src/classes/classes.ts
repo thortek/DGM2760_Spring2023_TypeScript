@@ -1,12 +1,27 @@
-import exampleData from '../data/exampleData.json'
+import curriculum from '../data/curriculum.json'
 
-const buildUIFromJSON = (dataObj: any) => {
-    dataObj.data.forEach((item: any) => {
-        console.log(item)
-    })
+const blocks = curriculum['responsive-web-design'].blocks
+
+console.log('Blocks: ', blocks)
+
+const blocksArray = Object.values(blocks)
+
+console.log('Blocks Array: ', blocksArray)
+
+console.log(blocksArray[0].meta.name)
+
+const navBar = document.querySelector('.navbar')!
+
+const buildNavFromJSON = (blockName: string) => {
+    const navItem = document.createElement('a')
+    navItem.classList.add('btn', 'btn-ghost', 'normal-case', 'text-xl', 'mx-4')
+    navItem.textContent = blockName
+    navBar.appendChild(navItem)
 }
 
-buildUIFromJSON(exampleData)
+blocksArray.forEach(block => {
+    buildNavFromJSON(block.meta.name)
+})
 
 class ExampleCodeSnippet {
     private title: string
