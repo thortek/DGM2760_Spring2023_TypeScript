@@ -7,6 +7,7 @@ const outDir = resolve(__dirname, 'dist')
 export default defineConfig({
   root,
   build: {
+    sourcemap: true,
     outDir,
     emptyOutDir: true,
     rollupOptions: {

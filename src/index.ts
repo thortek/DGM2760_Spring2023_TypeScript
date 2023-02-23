@@ -1,6 +1,6 @@
 import { functionParamsExample, objectTypeExample } from "./basicTypes"
 // import example data from exampleData.json
-import exampleData from './exampleData.json'
+//import exampleData from './exampleData.json'
 
 const funcParamsButton = document.querySelector('#funcParams')!
 const objectTypesButton = document.querySelector('#objectTypes')!
