@@ -70,6 +70,29 @@ const buildSnippetDisplay = (challenge: any) => {
 }
 
 
+blocksArray.map((block: any) => {
+  //console.log(block)
+  //destructuring an object
+  const { meta, challenges } = block
+  //destructuring: 'unpack' an array into distinct variables
+  const [firstChallenge, ...restOfChallenges] = challenges
+  //console.log(firstChallenge, restOfChallenges)
+
+  const { title, description, instructions } = firstChallenge
+  //console.log(title, description, instructions)
+
+  const { name, time, superBlock } = meta
+  //console.log(name, time, superBlock)
+
+  // ? is the optional chaining operator
+  // ?? is the nullish coalescing operator
+  
+  let blockName = block?.meta?.name ?? 'No name'
+  console.log(blockName)
+  let blockFooName = block?.meta?.fooName ?? ''
+  console.log(blockFooName)
+})
+
 
 
 
