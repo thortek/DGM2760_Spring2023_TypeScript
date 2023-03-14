@@ -62,9 +62,14 @@ const buildSnippetDisplay = (challenge: any) => {
     }
     const snippetTitle = document.createElement('h2')
     snippetTitle.classList.add('text-2xl', 'font-bold', 'mb-4', 'text-center')
-    snippetTitle.textContent = snippet.title
+  snippetTitle.textContent = snippet.title
+  
+  const snippetDescription = document.createElement('div')
+  snippetDescription.classList.add('text-2xl', 'text-center')
+  snippetDescription.innerHTML = snippet.description
 
-    snippetDisplay.appendChild(snippetTitle)
+  snippetDisplay.appendChild(snippetTitle)
+  snippetDisplay.appendChild(snippetDescription)
     // now add the description
     // now add the instructions
 }
