@@ -80,10 +80,21 @@ const buildSnippetDisplay = (challenge: any) => {
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 blocksArray.map((block: any) => {
-    const [, blockData] = block // ignore the first element of the array
-    buildNavFromJSON(blockData)
-    buildUIFromJSON(blockData)
-    console.log(blockData.meta.name, blockData.challenges)
+    // 'unpack' the array into two distinct variables
+    const [, blockData, ...rest] = block // ignore the first element of the array
+    //buildNavFromJSON(blockData)
+    //buildUIFromJSON(blockData)
+    //console.log(blockData.meta.name, blockData.challenges)
+
+    // 'unpack' the properties of the object into two distinct variables
+    const { meta, challenges, ...others } = blockData
+    console.log(meta.name, challenges, others, rest)   
+    
+    const [firstChallenge, secondChallenge, ...restOfChallenges] = challenges
+    console.log(firstChallenge, secondChallenge, restOfChallenges)
+
+    const { id, title, description, instructions, ...restOfChallenge } = firstChallenge
+    console.log(id, title, description, instructions, restOfChallenge)
 })
 
 

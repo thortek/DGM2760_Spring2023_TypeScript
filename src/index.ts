@@ -51,4 +51,4 @@ const buildUIFromJSON = (importedObject: any) => {
     })
 }
 
-buildUIFromJSON(exampleData)
+//buildUIFromJSON(exampleData)
