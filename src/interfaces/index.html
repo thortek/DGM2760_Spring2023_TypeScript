@@ -9,9 +9,23 @@
     <script src="interfaces.ts" type="module" defer></script>
 </head>
 <body>
+    <nav class="navbar">
     <h1 class="text-3xl">Example of a TypeScript Interface</h1>
-    <main>
+    <ul class="menu menu-horizontal rounded-box">
         
+    </ul>
+    </nav>  
+    <main>
+        <div class="displayFrame">
+            <iframe id="challengeVid" class="w-[1024px] h-[720px]"></iframe>
+        </div>
+        <div class="btn-group grid grid-cols-5 gap-4">
+            <button id="prev" class="btn btn-outline">Previous video</button>
+            <div class="text-center col-span-3">
+                <h2 id="challengeVidBtn" class="text-center">Challenge Video</h2>
+            </div>
+            <button id="next" class="btn btn-outline">Next video</button>
+        </div>
     </main>
 </body>
 </html>
