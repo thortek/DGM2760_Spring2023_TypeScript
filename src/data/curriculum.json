@@ -5,7 +5,6 @@
         "blocks": {
             "basic-css": {
                 "meta": {
-                    "fooName": "Woo",
                     "name": "Basic CSS",
                     "isUpcomingChange": false,
                     "dashedName": "basic-css",
