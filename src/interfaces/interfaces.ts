@@ -107,15 +107,14 @@ populateMenu(blocksArray)
 const getCurrentSnippet = (block: string) => {
   if (block === 'Basic CSS') {
     return basicCssSnippets[cssPosition]
-  }
-  if (block === 'Basic HTML and HTML5') {
+  } else if (block === 'Basic HTML and HTML5') {
     return basicHtmlSnippets[htmlPosition]
-  }
-  if (block === 'CSS Flexbox') {
+  } else if (block === 'CSS Flexbox') {
     return flexboxSnippets[flexboxPosition]
-  }
-  if (block === 'CSS Grid') {
+  } else if (block === 'CSS Grid') {
     return gridSnippets[gridPosition]
+  } else {
+    return new CodeSnippet('', '', '', '')
   }
 }
 
