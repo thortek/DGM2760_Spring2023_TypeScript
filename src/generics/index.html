@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
     <script src="generics.ts" type="module" defer></script>
     <link rel="stylesheet" href="../input.css"/>
     <title>Examples of TypeScript Generic Types</title>
 </head>
 <body>
-    <main class="bg-gray-700 w-full h-screen">
-    <h1 class="text-4xl bg-slate-300">Generic Type Examples</h1>
-    <div class="laptop w-[1024px] bg-slate-300 h-[768px] m-8">
+    <main class="bg-gray-700 w-screen h-screen flex flex-col justify-center">
+    <h1 class="text-4xl bg-slate-300 text-center p-4">Generic Type Examples</h1>
+    <div class="container m-16">
+    <div class="laptop bg-slate-900 mx-16 min-h-[800px] min-w-[1100px] rounded-tl-3xl rounded-tr-3xl border-2">
         <div class="laptop-screen flex">
-            <div class="description bg-white w-1/2">
-                <p>Here is where the description belongs</p>
+            <div class="description bg-white w-1/2 mt-6 ml-6 h-[750px] p-4">
+                <p class="text-xl">Here is where the description belongs</p>
             </div>
-            <div class="code-sample bg-gray-800 w-1/2">
-
+            <div class="code-sample bg-gray-800 w-1/2 mt-6 mr-6">
+                <pre class="text-xl">
+                    <code>
+function reverse<T>(array: T[]): T[] {
+    return array.reverse()
+}
+                        
+const stringArray = ['key lime', 'cherry', 'lemon']
+const reversedStringArray = reverse&lt;string&gt;(stringArray)
+console.log(reversedStringArray)
+                        
+const numberArray = [1342, 2654, 345676]
+const reversedNumberArray = reverse&lt;number&gt;(numberArray)
+console.log(reversedNumberArray)
+                    </code>
+                </pre>
             </div>
         </div>
-        <div class="keyboard">
 
-        </div>
     </div>
+    <div class="keyboard h-16 bg-white rounded-bl-3xl rounded-br-3xl mx-1">
+
+    </div>
+</div>
     </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
